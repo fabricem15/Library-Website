@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1= title + " 🖋"
+
+  ul.list
+    each author in author_list
+      li.listItem
+        a(href=author.url) #{author.name}   
+        |   ( #{author.lifespan})
+
+    else
+      li There are no authors.

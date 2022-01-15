@@ -1,0 +1,132 @@
+body {
+  padding: 50px;
+  /* font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; */
+  /* font-family: 'PT Sans', sans-serif; */
+}
+
+
+
+a {
+  color: #0d4287fa;
+  font-weight: 700;
+  text-decoration: none;
+}
+a:hover {
+  color: #0b76e7;
+  /* text-decoration: underline; */
+}
+label {
+  font-weight:500;
+}
+.sidebar-nav {
+  margin-top: 20px;
+  padding: 0;
+  list-style: none;
+}
+
+
+
+.errors{
+  color: red;
+}
+
+li {
+  list-style: none;
+}
+
+
+ul.list {
+  /* margin-left: 30px; */
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  right: 25%;
+  /* margin: auto; */
+  width: 30em;
+  padding: 10px 10px;
+  box-shadow: rgb(0 0 0 / 2%) 0px 1px 3px 0px, rgb(27 31 35 / 15%) 0px 0px 0px 1px;
+  border-radius: 10px;
+}
+
+a.buttons{
+    border: 2px solid #d3d1ce;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top:5px;
+    background-color: #0cb356;
+    color: white;
+}
+a.buttons:hover {
+  color: #0cb356;
+  background-color: white;
+  /* background-color: #0d4287fa;
+  color: rgb(241, 247, 252); */
+  text-decoration: none;
+}
+.listItem {
+  display: flex;
+  padding: 5px;
+  font-size: 12pt;
+  align-items: center;
+  font-family: sans-serif;
+  border-bottom: 2px solid #8f8c8c;
+  text-decoration: none;
+  /* color: #0058c9; */
+  font-weight: 800;
+}
+p.lifespan {
+  font-size: larger;
+  font-family: monospace;
+}
+h1.author{
+  border-bottom: aliceblue;
+    border-bottom-style: outset;
+}
+
+.btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  align-content: stretch;
+}
+.btns a {
+  margin-right: 10px;
+}
+
+a.buttons#delete {
+  background-color: #cd0404;
+  color:white;
+}
+a.buttons#delete:hover {
+  background-color: white;
+  color:#cd0404;
+}
+
+a.buttons#update{
+  background-color: rgb(98, 56, 194);
+  color:rgb(230, 230, 230);
+}
+a.buttons#update:hover{
+  color: rgb(98, 56, 194);
+  background-color:rgb(247, 243, 243);
+}
+
+.bookList{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+.bookList .listItem {
+  display: flex;
+    padding: 5px;
+    font-size: 12pt;
+    font-family: sans-serif;
+    text-decoration: none;
+    font-weight: 800;
+    align-items: center;
+    border-bottom: none;
+}

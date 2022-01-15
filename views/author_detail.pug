@@ -1,0 +1,26 @@
+extends layout
+
+block content
+
+  h1.author Author: #{author.name}
+  p.lifespan #{author.lifespan}
+
+  div(style='margin-left:20px;margin-top:20px')
+
+    h4 Books
+    dl
+      each book in author_books
+        dt
+          a(href=book.url) #{book.title}
+        dd #{book.summary}
+
+      else
+        p This author has no books. 
+        a.buttons(href='/catalog/book/create/') Add Book
+      hr 
+      .btns 
+        p 
+          a.buttons#update(href=author.url + '/update') Update author 
+        p 
+            a.buttons#delete(href=author.url + '/delete') Delete author
+
