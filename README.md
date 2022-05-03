@@ -1,3 +1,3 @@
-# Library-Website
+# Bookstore Website
 
-A library website based on the MDN Express Tutorial. 
+A bookstore website where users can browse books, order books, and search by authors, books, and genres.
